@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <!-- Console Appender: Logs output to the console (SYSTEM_OUT). -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        
+        <!-- File Appender: Logs to a file at logs/test.log -->
+        <File name="FileLogger" fileName="logs/test.log" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n"/>
+        </File>
+
+        <!-- Rolling File Appender: Automatically creates new log files every day or when log size exceeds 10MB -->
+        <RollingFile name="RollingFileLogger" fileName="logs/test-rolling.log" filePattern="logs/test-rolling-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB"/> <!-- Roll file when it exceeds 10MB -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/> <!-- Daily rolling -->
+            </Policies>
+            <DefaultRolloverStrategy max="30">
+                <Delete basePath="logs">
+                    <IfLastModified age="30d"/> <!-- Keep logs for 30 days -->
+                    <Then>
+                        <Gzip/>
+                    </Then>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+        <!-- Root logger configured at INFO level for production-friendly logging -->
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+            <AppenderRef ref="RollingFileLogger"/>
+        </Root>
+
+        <!-- Custom logger for a specific module -->
+        <Logger name="com.myapp.module" level="info">
+            <AppenderRef ref="FileLogger"/>
+        </Logger>
+
+        <!-- Custom logger for a specific module with a higher log level (warn) -->
+        <Logger name="com.myapp.warning" level="warn">
+            <AppenderRef ref="RollingFileLogger"/>
+        </Logger>
+
+        <!-- Logger for third-party libraries -->
+        <Logger name="org.apache" level="warn">
+            <AppenderRef ref="RollingFileLogger"/>
+        </Logger>
+    </Loggers>
+</Configuration>

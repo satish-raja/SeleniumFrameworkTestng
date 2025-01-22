@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-SanityTestSuite" class="navigator-link">
+              <span class="suite-name border-failed">SanityTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-SanityTestSuite" class="navigator-link ">
+                    <span>D:\WorkSpace_Selenium\orangeHRM.TestNG86\TestngRunner\testng-sanitytest.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-SanityTestSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-SanityTestSuite" class="navigator-link ">
+                    <span>4 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-SanityTestSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-SanityTestSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-SanityTestSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-SanityTestSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 1 failed,  2 skipped,  5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SanityTestSuite" class="hide-methods failed suite-SanityTestSuite"> (hide)</a> <!-- hide-methods failed suite-SanityTestSuite -->
+                      <a href="#" panel-name="suite-SanityTestSuite" class="show-methods failed suite-SanityTestSuite"> (show)</a> <!-- show-methods failed suite-SanityTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-SanityTestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SanityTestSuite" title="com.orangehrm.testng.tests.TC_Login_EmptyCredentials" class="method navigator-link" hash-for-method="testLoginWithEmptyCredentials">testLoginWithEmptyCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SanityTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-SanityTestSuite" class="hide-methods skipped suite-SanityTestSuite"> (hide)</a> <!-- hide-methods skipped suite-SanityTestSuite -->
+                      <a href="#" panel-name="suite-SanityTestSuite" class="show-methods skipped suite-SanityTestSuite"> (show)</a> <!-- show-methods skipped suite-SanityTestSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-SanityTestSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-SanityTestSuite" title="com.orangehrm.testng.tests.TC_Login_EmptyCredentials" class="method navigator-link" hash-for-method="testLoginWithEmptyCredentials">testLoginWithEmptyCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-SanityTestSuite" title="com.orangehrm.testng.tests.TC_Login_EmptyCredentials" class="method navigator-link" hash-for-method="testLoginWithEmptyCredentials">testLoginWithEmptyCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-SanityTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SanityTestSuite" class="hide-methods passed suite-SanityTestSuite"> (hide)</a> <!-- hide-methods passed suite-SanityTestSuite -->
+                      <a href="#" panel-name="suite-SanityTestSuite" class="show-methods passed suite-SanityTestSuite"> (show)</a> <!-- show-methods passed suite-SanityTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-SanityTestSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SanityTestSuite" title="com.orangehrm.testng.tests.TC_Login_InvalidCredentials" class="method navigator-link" hash-for-method="testLoginWithInvalidCredentials(Adm, admin123, Invalid Credentials)">testLoginWithInvalidCredentials(Adm, admin123, Invalid Credentials)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SanityTestSuite" title="com.orangehrm.testng.tests.TC_Login_InvalidCredentials" class="method navigator-link" hash-for-method="testLoginWithInvalidCredentials(Adm, admin, Invalid Credentials)">testLoginWithInvalidCredentials(Adm, admin, Invalid Credentials)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SanityTestSuite" title="com.orangehrm.testng.tests.TC_Login_InvalidCredentials" class="method navigator-link" hash-for-method="testLoginWithInvalidCredentials(Admin, admin, Invalid Credentials)">testLoginWithInvalidCredentials(Admin, admin, Invalid Credentials)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SanityTestSuite" title="com.orangehrm.testng.tests.TC_Login_ValidCredentials" class="method navigator-link" hash-for-method="testLoginWithValidCredentials(Admin, admin123, Valid Credentials)">testLoginWithValidCredentials(Admin, admin123, Valid Credentials)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SanityTestSuite" title="com.orangehrm.testng.tests.TC_Login_ResetPassword" class="method navigator-link" hash-for-method="testResetPassword">testResetPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SanityTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SanityTestSuite" class="panel SanityTestSuite">
+          <div class="suite-SanityTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.orangehrm.testng.tests.TC_Login_EmptyCredentials</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithEmptyCredentials">
+                  </a> <!-- testLoginWithEmptyCredentials -->
+                  <span class="method-name">testLoginWithEmptyCredentials</span>
+                  <div class="stack-trace">java.lang.AssertionError: Username error validation expected [Require] but found [Required]
+	at com.orangehrm.testng.tests.TC_Login_EmptyCredentials.testLoginWithEmptyCredentials(TC_Login_EmptyCredentials.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify the login functionality of OrangeHRM with empty credentials to validate required field errors)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestSuite-class-failed -->
+          <div class="suite-SanityTestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.orangehrm.testng.tests.TC_Login_EmptyCredentials</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithEmptyCredentials">
+                  </a> <!-- testLoginWithEmptyCredentials -->
+                  <span class="method-name">testLoginWithEmptyCredentials</span>
+                  <div class="stack-trace">java.lang.AssertionError: Username error validation expected [Require] but found [Required]
+	at com.orangehrm.testng.tests.TC_Login_EmptyCredentials.testLoginWithEmptyCredentials(TC_Login_EmptyCredentials.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify the login functionality of OrangeHRM with empty credentials to validate required field errors)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithEmptyCredentials">
+                  </a> <!-- testLoginWithEmptyCredentials -->
+                  <span class="method-name">testLoginWithEmptyCredentials</span>
+                  <div class="stack-trace">java.lang.AssertionError: Username error validation expected [Require] but found [Required]
+	at com.orangehrm.testng.tests.TC_Login_EmptyCredentials.testLoginWithEmptyCredentials(TC_Login_EmptyCredentials.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify the login functionality of OrangeHRM with empty credentials to validate required field errors)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestSuite-class-skipped -->
+          <div class="suite-SanityTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.orangehrm.testng.tests.TC_Login_InvalidCredentials</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithInvalidCredentials(Adm, admin123, Invalid Credentials)">
+                  </a> <!-- testLoginWithInvalidCredentials(Adm, admin123, Invalid Credentials) -->
+                  <span class="method-name">testLoginWithInvalidCredentials</span>
+                  <span class="parameters">(Adm,admin123,Invalid Credentials)</span>
+                  <em>
+(Verify the login functionality of OrangeHRM with invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithInvalidCredentials(Adm, admin, Invalid Credentials)">
+                  </a> <!-- testLoginWithInvalidCredentials(Adm, admin, Invalid Credentials) -->
+                  <span class="method-name">testLoginWithInvalidCredentials</span>
+                  <span class="parameters">(Adm,admin,Invalid Credentials)</span>
+                  <em>
+(Verify the login functionality of OrangeHRM with invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithInvalidCredentials(Admin, admin, Invalid Credentials)">
+                  </a> <!-- testLoginWithInvalidCredentials(Admin, admin, Invalid Credentials) -->
+                  <span class="method-name">testLoginWithInvalidCredentials</span>
+                  <span class="parameters">(Admin,admin,Invalid Credentials)</span>
+                  <em>
+(Verify the login functionality of OrangeHRM with invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestSuite-class-passed -->
+          <div class="suite-SanityTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.orangehrm.testng.tests.TC_Login_ResetPassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testResetPassword">
+                  </a> <!-- testResetPassword -->
+                  <span class="method-name">testResetPassword</span>
+                  <em>
+(Verify the reset password functionality of OrangeHRM)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestSuite-class-passed -->
+          <div class="suite-SanityTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.orangehrm.testng.tests.TC_Login_ValidCredentials</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithValidCredentials(Admin, admin123, Valid Credentials)">
+                  </a> <!-- testLoginWithValidCredentials(Admin, admin123, Valid Credentials) -->
+                  <span class="method-name">testLoginWithValidCredentials</span>
+                  <span class="parameters">(Admin,admin123,Valid Credentials)</span>
+                  <em>
+(Verify the login functionality of OrangeHRM with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SanityTestSuite-class-passed -->
+        </div> <!-- panel SanityTestSuite -->
+        <div panel-name="test-xml-SanityTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\WorkSpace_Selenium\orangeHRM.TestNG86\TestngRunner\testng-sanitytest.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;SanityTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;isHeadless&quot; value=&quot;false&quot;/&gt;
+  &lt;parameter name=&quot;logLevel&quot; value=&quot;${logLevel:DEBUG}&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;${browser:chrome}&quot;/&gt;
+  &lt;parameter name=&quot;env&quot; value=&quot;${env:dev}&quot;/&gt;
+  &lt;parameter name=&quot;report.type&quot; value=&quot;${reportType:allure}&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.orangehrm.testng.listeners.AllureTestListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.orangehrm.testng.listeners.ExtentTestListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.orangehrm.testng.listeners.RetryListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;classes&quot; name=&quot;SanityTests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.orangehrm.testng.tests.TC_Login_ValidCredentials&quot;/&gt;
+      &lt;class name=&quot;com.orangehrm.testng.tests.TC_Login_InvalidCredentials&quot;/&gt;
+      &lt;class name=&quot;com.orangehrm.testng.tests.TC_Login_EmptyCredentials&quot;/&gt;
+      &lt;class name=&quot;com.orangehrm.testng.tests.TC_Login_ResetPassword&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SanityTests --&gt;
+&lt;/suite&gt; &lt;!-- SanityTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SanityTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SanityTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SanityTests (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SanityTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SanityTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">endtoendTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginWithValidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regressionTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginWithInvalidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginWithValidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanityTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginWithEmptyCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginWithInvalidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginWithValidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testResetPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smokeTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginWithValidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SanityTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SanityTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SanityTestSuite');
+function tableData_SanityTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testResetPassword')
+data.setCell(0, 2, 'com.orangehrm.testng.tests.TC_Login_ResetPassword')
+data.setCell(0, 3, 3384);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testLoginWithValidCredentials')
+data.setCell(1, 2, 'com.orangehrm.testng.tests.TC_Login_ValidCredentials')
+data.setCell(1, 3, 2697);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testLoginWithInvalidCredentials')
+data.setCell(2, 2, 'com.orangehrm.testng.tests.TC_Login_InvalidCredentials')
+data.setCell(2, 3, 1922);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLoginWithInvalidCredentials')
+data.setCell(3, 2, 'com.orangehrm.testng.tests.TC_Login_InvalidCredentials')
+data.setCell(3, 3, 1916);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testLoginWithInvalidCredentials')
+data.setCell(4, 2, 'com.orangehrm.testng.tests.TC_Login_InvalidCredentials')
+data.setCell(4, 3, 1529);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testLoginWithEmptyCredentials')
+data.setCell(5, 2, 'com.orangehrm.testng.tests.TC_Login_EmptyCredentials')
+data.setCell(5, 3, 289);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testLoginWithEmptyCredentials')
+data.setCell(6, 2, 'com.orangehrm.testng.tests.TC_Login_EmptyCredentials')
+data.setCell(6, 3, 252);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testLoginWithEmptyCredentials')
+data.setCell(7, 2, 'com.orangehrm.testng.tests.TC_Login_EmptyCredentials')
+data.setCell(7, 3, 206);
+window.suiteTableData['SanityTestSuite']= { tableData: data, tableDiv: 'times-div-SanityTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <div id="times-div-SanityTestSuite">
+              </div> <!-- times-div-SanityTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SanityTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SanityTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SanityTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">3 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.orangehrm.testng.tests.TC_Login_EmptyCredentials</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">clearAllureResults</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.orangehrm.testng.tests.TC_Login_InvalidCredentials</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">clearAllureResults</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.orangehrm.testng.tests.TC_Login_ResetPassword</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">clearAllureResults</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SanityTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testng.tests.TC_Login_ValidCredentials</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">clearAllureResults</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome, false)</span>
+                <span class="method-start">54 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testng.tests.TC_Login_InvalidCredentials</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome, false)</span>
+                <span class="method-start">54 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testng.tests.TC_Login_ResetPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome, false)</span>
+                <span class="method-start">54 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testng.tests.TC_Login_EmptyCredentials</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome, false)</span>
+                <span class="method-start">55 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testng.tests.TC_Login_ResetPassword</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testResetPassword</span>
+                <span class="method-start">5782 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testng.tests.TC_Login_EmptyCredentials</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithEmptyCredentials</span>
+                <span class="method-start">5919 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithEmptyCredentials</span>
+                <span class="method-start">6284 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testng.tests.TC_Login_InvalidCredentials</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithInvalidCredentials(Adm, admin123, Invalid Credentials)</span>
+                <span class="method-start">6310 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testng.tests.TC_Login_ValidCredentials</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithValidCredentials(Admin, admin123, Valid Credentials)</span>
+                <span class="method-start">6446 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testng.tests.TC_Login_EmptyCredentials</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLoginWithEmptyCredentials</span>
+                <span class="method-start">6541 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7117 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testng.tests.TC_Login_InvalidCredentials</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithInvalidCredentials(Admin, admin, Invalid Credentials)</span>
+                <span class="method-start">8230 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testng.tests.TC_Login_ValidCredentials</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">9146 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testng.tests.TC_Login_ResetPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">9168 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testng.tests.TC_Login_InvalidCredentials</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithInvalidCredentials(Adm, admin, Invalid Credentials)</span>
+                <span class="method-start">10155 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11687 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

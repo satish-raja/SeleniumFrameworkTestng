@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-30T16:30:46 IST" name="RetryTestSuite" finished-at="2024-12-30T16:30:46 IST" duration-ms="150">
+    <groups>
+    </groups>
+    <test started-at="2024-12-30T16:30:46 IST" name="SanityTests" finished-at="2024-12-30T16:30:46 IST" duration-ms="150">
+      <class name="com.orangehrm.testng.tests.TC_Login_EmptyCredentials">
+        <test-method is-config="true" signature="clearAllureResults()[pri:0, instance:com.orangehrm.testng.tests.TC_Login_EmptyCredentials@294bdeb4]" started-at="2024-12-30T16:30:46 IST" name="clearAllureResults" finished-at="2024-12-30T16:30:46 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearAllureResults -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testng.tests.TC_Login_EmptyCredentials@294bdeb4]" started-at="2024-12-30T16:30:46 IST" name="setUp" finished-at="2024-12-30T16:30:46 IST" duration-ms="7" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[${browser:chrome}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Unsupported browser: ${browser:chrome}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Unsupported browser: ${browser:chrome}
+at com.orangehrm.testng.utils.BrowserFactory.getDriver(BrowserFactory.java:32)
+at com.orangehrm.testng.managers.TestSetupManager.initializeDriver(TestSetupManager.java:17)
+at com.orangehrm.testng.basetest.BaseTest.setUp(BaseTest.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithEmptyCredentials()[pri:0, instance:com.orangehrm.testng.tests.TC_Login_EmptyCredentials@294bdeb4]" started-at="2024-12-30T16:30:46 IST" name="testLoginWithEmptyCredentials" description="Verify the login functionality of OrangeHRM with empty credentials to validate required field errors" finished-at="2024-12-30T16:30:46 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Unsupported browser: ${browser:chrome}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Unsupported browser: ${browser:chrome}
+at com.orangehrm.testng.utils.BrowserFactory.getDriver(BrowserFactory.java:32)
+at com.orangehrm.testng.managers.TestSetupManager.initializeDriver(TestSetupManager.java:17)
+at com.orangehrm.testng.basetest.BaseTest.setUp(BaseTest.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithEmptyCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testng.tests.TC_Login_EmptyCredentials@294bdeb4]" started-at="2024-12-30T16:30:46 IST" name="tearDown" finished-at="2024-12-30T16:30:46 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orangehrm.testng.tests.TC_Login_EmptyCredentials -->
+    </test> <!-- SanityTests -->
+  </suite> <!-- RetryTestSuite -->
+</testng-results>

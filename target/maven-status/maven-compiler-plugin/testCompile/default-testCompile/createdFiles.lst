@@ -1,0 +1,15 @@
+com\orangehrm\testng\utils\ScreenshotHandler.class
+com\orangehrm\testng\reports\AllureReportManager.class
+com\orangehrm\testng\tests\TC_Login_ResetPassword.class
+com\orangehrm\testng\basetest\BaseTest.class
+com\orangehrm\testng\tests\TC_Login_EmptyCredentials.class
+com\orangehrm\testng\listeners\ExtentTestListener.class
+com\orangehrm\testng\listeners\RetryAnalyzer.class
+com\orangehrm\testng\utils\TestDataProvider.class
+com\orangehrm\testng\tests\TC_Login_InvalidCredentials.class
+com\orangehrm\testng\reports\ExtentReportManager.class
+com\orangehrm\testng\tests\TC_Login_ValidCredentials.class
+com\orangehrm\testng\listeners\RetryListener.class
+com\orangehrm\testng\utils\TestHelper.class
+com\orangehrm\testng\utils\TestLogger.class
+com\orangehrm\testng\listeners\AllureTestListener.class

@@ -1,0 +1,428 @@
+2024-12-21 07:25:24 [main] INFO  com.orangehrm.testng.listeners.TestListener - TestListener Initialized.
+2024-12-21 07:25:25 [main] INFO  com.orangehrm.testng.utils.ConfigManager - Loaded configuration for environment: dev
+2024-12-21 07:25:25 [main] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 07:25:25 [main] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 07:25:25 [main] INFO  com.orangehrm.testng.listeners.TestListener - Test Context Started: SanityTests
+2024-12-21 07:25:25 [main] INFO  com.orangehrm.testng.listeners.TestListener - Running tests with Browser: ${browser:chrome}
+2024-12-21 07:25:25 [main] INFO  com.orangehrm.testng.listeners.TestListener - Running tests in Environment: ${env:dev}
+2024-12-21 07:25:25 [main] WARN  com.orangehrm.testng.listeners.TestListener - Invalid or missing log level '${logLevel:DEBUG}'. Defaulting to 'INFO'.
+2024-12-21 07:25:25 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-21 07:25:25 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-21 07:25:25 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-21 07:25:25 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-21 07:25:26 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.DriverManager - Thread 37: WebDriver instance set for the current thread: ChromeDriver
+2024-12-21 07:25:26 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.DriverManager - Thread 36: WebDriver instance set for the current thread: ChromeDriver
+2024-12-21 07:25:26 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.DriverManager - Thread 34: WebDriver instance set for the current thread: ChromeDriver
+2024-12-21 07:25:26 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.DriverManager - Thread 35: WebDriver instance set for the current thread: ChromeDriver
+2024-12-21 07:25:26 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 07:25:26 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 07:25:26 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 07:25:26 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 07:25:26 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 07:25:26 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 07:25:26 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 07:25:26 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 07:25:29 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-21 07:25:29 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-21 07:25:29 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-21 07:25:29 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LoginDataUtil - Loading test data from Excel file: D:\WorkSpace_Selenium\orangeHRM.TestNG40\src\test\resources\loginData.xlsx
+2024-12-21 07:25:29 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithEmptyCredentials at 2024-12-21T07:25:29.917647900
+2024-12-21 07:25:29 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with empty credentials to validate required field errors
+2024-12-21 07:25:29 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithEmptyCredentials
+2024-12-21 07:25:29 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.tests.TC_Login_EmptyCredentials - Starting test: testLoginWithEmptyCredentials
+2024-12-21 07:25:29 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.LogUtil - TESTCASE: EMPTY CREDENTIALS
+2024-12-21 07:25:29 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-21 07:25:29 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: 
+2024-12-21 07:25:30 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: 
+2024-12-21 07:25:30 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 07:25:30 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Username field validation passed.
+2024-12-21 07:25:30 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Password field validation passed.
+2024-12-21 07:25:30 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.tests.TC_Login_EmptyCredentials - Login validation for empty credentials passed.
+2024-12-21 07:25:30 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithEmptyCredentials. Duration: 297 ms
+2024-12-21 07:25:30 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testResetPassword at 2024-12-21T07:25:30.336648500
+2024-12-21 07:25:30 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the reset password functionality of OrangeHRM
+2024-12-21 07:25:30 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testResetPassword
+2024-12-21 07:25:30 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.tests.TC_Login_ResetPassword - Starting test: testResetPassword
+2024-12-21 07:25:30 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.LogUtil - TESTCASE: RESET PASSWORD
+2024-12-21 07:25:30 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LoginDataUtil - Loading test data from JSON file: D:\WorkSpace_Selenium\orangeHRM.TestNG40\src\test\resources\loginData.json
+2024-12-21 07:25:30 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Filtered Invalid Credentials test data: [{username=Adm, password=admin123, story=Invalid Credentials}, {username=Admin, password=admin, story=Invalid Credentials}, {username=Adm, password=admin, story=Invalid Credentials}]
+2024-12-21 07:25:30 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithInvalidCredentials at 2024-12-21T07:25:30.422648100
+2024-12-21 07:25:30 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with invalid credentials
+2024-12-21 07:25:30 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithInvalidCredentials
+2024-12-21 07:25:30 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Starting test: testLoginWithInvalidCredentials with username: Adm
+2024-12-21 07:25:30 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Parameters - Username: Adm, Password: admin123
+2024-12-21 07:25:30 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Adm
+2024-12-21 07:25:30 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Filtered Valid Credentials test data: [{password=admin123, username=Admin, story=Valid Credentials}]
+2024-12-21 07:25:30 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithValidCredentials at 2024-12-21T07:25:30.538648200
+2024-12-21 07:25:30 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with valid credentials
+2024-12-21 07:25:30 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithValidCredentials
+2024-12-21 07:25:30 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.tests.TC_Login_ValidCredentials - Starting test: testLoginWithValidCredentials with username: Admin
+2024-12-21 07:25:30 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Parameters - Username: Admin, Password: admin123
+2024-12-21 07:25:30 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.DriverManager - Thread 36: WebDriver instance quit successfully.
+2024-12-21 07:25:30 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-21 07:25:30 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin123
+2024-12-21 07:25:30 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-21 07:25:30 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin123
+2024-12-21 07:25:31 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.LogUtil - Clicked forgot password link
+2024-12-21 07:25:31 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-21 07:25:31 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 07:25:31 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 07:25:31 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 07:25:32 [TestNG-test=SanityTests-2] ERROR com.orangehrm.testng.basetest.BaseTest - Login failed with error message: Invalid credentials
+2024-12-21 07:25:32 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Login validation for invalid credentials passed.
+2024-12-21 07:25:32 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithInvalidCredentials. Duration: 1465 ms
+2024-12-21 07:25:32 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithInvalidCredentials at 2024-12-21T07:25:32.008889
+2024-12-21 07:25:32 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with invalid credentials
+2024-12-21 07:25:32 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithInvalidCredentials
+2024-12-21 07:25:32 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Starting test: testLoginWithInvalidCredentials with username: Admin
+2024-12-21 07:25:32 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Parameters - Username: Admin, Password: admin
+2024-12-21 07:25:32 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-21 07:25:32 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin
+2024-12-21 07:25:32 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 07:25:32 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Login successful with valid credentials.
+2024-12-21 07:25:32 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.tests.TC_Login_ResetPassword - Reset password validation successful.
+2024-12-21 07:25:32 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testResetPassword. Duration: 953 ms
+2024-12-21 07:25:33 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.DriverManager - Thread 37: WebDriver instance quit successfully.
+2024-12-21 07:25:33 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-21 07:25:33 [TestNG-test=SanityTests-2] ERROR com.orangehrm.testng.basetest.BaseTest - Login failed with error message: Invalid credentials
+2024-12-21 07:25:33 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Login validation for invalid credentials passed.
+2024-12-21 07:25:33 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithInvalidCredentials. Duration: 1646 ms
+2024-12-21 07:25:33 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithInvalidCredentials at 2024-12-21T07:25:33.657923
+2024-12-21 07:25:33 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with invalid credentials
+2024-12-21 07:25:33 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithInvalidCredentials
+2024-12-21 07:25:33 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Starting test: testLoginWithInvalidCredentials with username: Adm
+2024-12-21 07:25:33 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Parameters - Username: Adm, Password: admin
+2024-12-21 07:25:33 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Adm
+2024-12-21 07:25:33 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin
+2024-12-21 07:25:33 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 07:25:33 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Clicked logout link
+2024-12-21 07:25:33 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.tests.TC_Login_ValidCredentials - Logged out successfully. Test completed.
+2024-12-21 07:25:33 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithValidCredentials. Duration: 204 ms
+2024-12-21 07:25:33 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.DriverManager - Thread 34: WebDriver instance quit successfully.
+2024-12-21 07:25:33 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-21 07:25:34 [TestNG-test=SanityTests-2] ERROR com.orangehrm.testng.basetest.BaseTest - Login failed with error message: Invalid credentials
+2024-12-21 07:25:34 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Login validation for invalid credentials passed.
+2024-12-21 07:25:34 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithInvalidCredentials. Duration: 1293 ms
+2024-12-21 07:25:35 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.DriverManager - Thread 35: WebDriver instance quit successfully.
+2024-12-21 07:25:35 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-21 07:25:35 [main] INFO  com.orangehrm.testng.listeners.TestListener - Test Context Finished: SanityTests
+2024-12-21 07:25:35 [main] INFO  com.orangehrm.testng.listeners.TestListener - Test Run Summary - Total: 4, Passed: 6, Failed: 0, Skipped: 0
+2024-12-21 07:25:35 [main] INFO  com.orangehrm.testng.listeners.TestListener - Success Percentage: {:.2f}%
+2024-12-21 07:25:35 [main] INFO  com.orangehrm.testng.listeners.TestListener - Test Run Duration: 9 seconds
+2024-12-21 08:19:16 [main] INFO  com.orangehrm.testng.listeners.TestListener - TestListener Initialized.
+2024-12-21 08:19:16 [main] INFO  com.orangehrm.testng.utils.ConfigManager - Loaded configuration for environment: dev
+2024-12-21 08:19:16 [main] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 08:19:16 [main] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 08:19:16 [main] INFO  com.orangehrm.testng.listeners.TestListener - Test Context Started: SanityTests
+2024-12-21 08:19:16 [main] INFO  com.orangehrm.testng.listeners.TestListener - Running tests with Browser: ${browser:chrome}
+2024-12-21 08:19:16 [main] INFO  com.orangehrm.testng.listeners.TestListener - Running tests in Environment: ${env:dev}
+2024-12-21 08:19:16 [main] WARN  com.orangehrm.testng.listeners.TestListener - Invalid or missing log level '${logLevel:DEBUG}'. Defaulting to 'INFO'.
+2024-12-21 08:19:16 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-21 08:19:16 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-21 08:19:16 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-21 08:19:16 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-21 08:19:18 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.DriverManager - Thread 35: WebDriver instance set for the current thread: ChromeDriver
+2024-12-21 08:19:18 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.DriverManager - Thread 32: WebDriver instance set for the current thread: ChromeDriver
+2024-12-21 08:19:18 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.DriverManager - Thread 33: WebDriver instance set for the current thread: ChromeDriver
+2024-12-21 08:19:18 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.DriverManager - Thread 34: WebDriver instance set for the current thread: ChromeDriver
+2024-12-21 08:19:18 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 08:19:18 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 08:19:18 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 08:19:18 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 08:19:18 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 08:19:18 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 08:19:18 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 08:19:18 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 08:19:20 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-21 08:19:20 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-21 08:19:21 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-21 08:19:21 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-21 08:19:21 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LoginDataUtil - Loading test data from JSON file: D:\WorkSpace_Selenium\orangeHRM.TestNG40\src\test\resources\loginData.json
+2024-12-21 08:19:21 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Filtered Invalid Credentials test data: [{username=Adm, password=admin123, story=Invalid Credentials}, {username=Admin, password=admin, story=Invalid Credentials}, {username=Adm, password=admin, story=Invalid Credentials}]
+2024-12-21 08:19:21 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithEmptyCredentials at 2024-12-21T08:19:21.278774900
+2024-12-21 08:19:21 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithInvalidCredentials at 2024-12-21T08:19:21.278774900
+2024-12-21 08:19:21 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with empty credentials to validate required field errors
+2024-12-21 08:19:21 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with invalid credentials
+2024-12-21 08:19:21 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithEmptyCredentials
+2024-12-21 08:19:21 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithInvalidCredentials
+2024-12-21 08:19:21 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.tests.TC_Login_EmptyCredentials - Starting test: testLoginWithEmptyCredentials
+2024-12-21 08:19:21 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Starting test: testLoginWithInvalidCredentials with username: Adm
+2024-12-21 08:19:21 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.LogUtil - TESTCASE: EMPTY CREDENTIALS
+2024-12-21 08:19:21 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Parameters - Username: Adm, Password: admin123
+2024-12-21 08:19:21 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: 
+2024-12-21 08:19:21 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Adm
+2024-12-21 08:19:21 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: 
+2024-12-21 08:19:21 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin123
+2024-12-21 08:19:21 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LoginDataUtil - Loading test data from Excel file: D:\WorkSpace_Selenium\orangeHRM.TestNG40\src\test\resources\loginData.xlsx
+2024-12-21 08:19:21 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testResetPassword at 2024-12-21T08:19:21.559046700
+2024-12-21 08:19:21 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the reset password functionality of OrangeHRM
+2024-12-21 08:19:21 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 08:19:21 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testResetPassword
+2024-12-21 08:19:21 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.tests.TC_Login_ResetPassword - Starting test: testResetPassword
+2024-12-21 08:19:21 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.LogUtil - TESTCASE: RESET PASSWORD
+2024-12-21 08:19:21 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 08:19:21 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Username field validation passed.
+2024-12-21 08:19:21 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Password field validation passed.
+2024-12-21 08:19:21 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.tests.TC_Login_EmptyCredentials - Login validation for empty credentials passed.
+2024-12-21 08:19:21 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithEmptyCredentials. Duration: 98 ms
+2024-12-21 08:19:21 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.DriverManager - Thread 34: WebDriver instance quit successfully.
+2024-12-21 08:19:21 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-21 08:19:22 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Filtered Valid Credentials test data: [{password=admin123, username=Admin, story=Valid Credentials}]
+2024-12-21 08:19:22 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithValidCredentials at 2024-12-21T08:19:22.057055200
+2024-12-21 08:19:22 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with valid credentials
+2024-12-21 08:19:22 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithValidCredentials
+2024-12-21 08:19:22 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.tests.TC_Login_ValidCredentials - Starting test: testLoginWithValidCredentials with username: Admin
+2024-12-21 08:19:22 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Parameters - Username: Admin, Password: admin123
+2024-12-21 08:19:22 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-21 08:19:22 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin123
+2024-12-21 08:19:22 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 08:19:22 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.LogUtil - Clicked forgot password link
+2024-12-21 08:19:22 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-21 08:19:22 [TestNG-test=SanityTests-2] ERROR com.orangehrm.testng.basetest.BaseTest - Login failed with error message: Invalid credentials
+2024-12-21 08:19:22 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Login validation for invalid credentials passed.
+2024-12-21 08:19:22 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithInvalidCredentials. Duration: 831 ms
+2024-12-21 08:19:22 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithInvalidCredentials at 2024-12-21T08:19:22.892400600
+2024-12-21 08:19:22 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with invalid credentials
+2024-12-21 08:19:22 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithInvalidCredentials
+2024-12-21 08:19:22 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Starting test: testLoginWithInvalidCredentials with username: Admin
+2024-12-21 08:19:22 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Parameters - Username: Admin, Password: admin
+2024-12-21 08:19:22 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 08:19:22 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-21 08:19:22 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin
+2024-12-21 08:19:23 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 08:19:23 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Login successful with valid credentials.
+2024-12-21 08:19:24 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.tests.TC_Login_ResetPassword - Reset password validation successful.
+2024-12-21 08:19:24 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testResetPassword. Duration: 1236 ms
+2024-12-21 08:19:24 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.DriverManager - Thread 35: WebDriver instance quit successfully.
+2024-12-21 08:19:24 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-21 08:19:24 [TestNG-test=SanityTests-2] ERROR com.orangehrm.testng.basetest.BaseTest - Login failed with error message: Invalid credentials
+2024-12-21 08:19:24 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Login validation for invalid credentials passed.
+2024-12-21 08:19:24 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithInvalidCredentials. Duration: 1658 ms
+2024-12-21 08:19:24 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithInvalidCredentials at 2024-12-21T08:19:24.554650200
+2024-12-21 08:19:24 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with invalid credentials
+2024-12-21 08:19:24 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithInvalidCredentials
+2024-12-21 08:19:24 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Starting test: testLoginWithInvalidCredentials with username: Adm
+2024-12-21 08:19:24 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Parameters - Username: Adm, Password: admin
+2024-12-21 08:19:24 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Adm
+2024-12-21 08:19:24 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin
+2024-12-21 08:19:25 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 08:19:25 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Clicked logout link
+2024-12-21 08:19:25 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.tests.TC_Login_ValidCredentials - Logged out successfully. Test completed.
+2024-12-21 08:19:25 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithValidCredentials. Duration: 1014 ms
+2024-12-21 08:19:25 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.DriverManager - Thread 32: WebDriver instance quit successfully.
+2024-12-21 08:19:25 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-21 08:19:25 [TestNG-test=SanityTests-2] ERROR com.orangehrm.testng.basetest.BaseTest - Login failed with error message: Invalid credentials
+2024-12-21 08:19:25 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Login validation for invalid credentials passed.
+2024-12-21 08:19:25 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithInvalidCredentials. Duration: 1343 ms
+2024-12-21 08:19:25 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.DriverManager - Thread 33: WebDriver instance quit successfully.
+2024-12-21 08:19:25 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-21 08:19:25 [main] INFO  com.orangehrm.testng.listeners.TestListener - Test Context Finished: SanityTests
+2024-12-21 08:19:25 [main] INFO  com.orangehrm.testng.listeners.TestListener - Test Run Summary - Total: 4, Passed: 6, Failed: 0, Skipped: 0
+2024-12-21 08:19:25 [main] INFO  com.orangehrm.testng.listeners.TestListener - Success Percentage: {:.2f}%
+2024-12-21 08:19:25 [main] INFO  com.orangehrm.testng.listeners.TestListener - Test Run Duration: 9 seconds
+2024-12-21 08:47:02 [main] INFO  com.orangehrm.testng.listeners.TestListener - TestListener Initialized.
+2024-12-21 08:47:02 [main] INFO  com.orangehrm.testng.utils.ConfigManager - Loaded configuration for environment: dev
+2024-12-21 08:47:02 [main] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 08:47:02 [main] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 08:47:02 [main] INFO  com.orangehrm.testng.listeners.TestListener - Test Context Started: SanityTests
+2024-12-21 08:47:02 [main] INFO  com.orangehrm.testng.listeners.TestListener - Running tests with Browser: ${browser:chrome}
+2024-12-21 08:47:02 [main] INFO  com.orangehrm.testng.listeners.TestListener - Running tests in Environment: ${env:dev}
+2024-12-21 08:47:02 [main] WARN  com.orangehrm.testng.listeners.TestListener - Invalid or missing log level '${logLevel:DEBUG}'. Defaulting to 'INFO'.
+2024-12-21 08:47:02 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-21 08:47:02 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-21 08:47:02 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-21 08:47:02 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-21 08:47:04 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 08:47:04 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 08:47:04 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 08:47:04 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 08:47:04 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 08:47:04 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 08:47:04 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 08:47:04 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 08:47:06 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-21 08:47:06 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-21 08:47:07 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-21 08:47:07 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithEmptyCredentials at 2024-12-21T08:47:07.425765100
+2024-12-21 08:47:07 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testResetPassword at 2024-12-21T08:47:07.425765100
+2024-12-21 08:47:07 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with empty credentials to validate required field errors
+2024-12-21 08:47:07 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the reset password functionality of OrangeHRM
+2024-12-21 08:47:07 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithEmptyCredentials
+2024-12-21 08:47:07 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testResetPassword
+2024-12-21 08:47:07 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.tests.TC_Login_EmptyCredentials - Starting test: testLoginWithEmptyCredentials
+2024-12-21 08:47:07 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.tests.TC_Login_ResetPassword - Starting test: testResetPassword
+2024-12-21 08:47:07 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.LogUtil - TESTCASE: EMPTY CREDENTIALS
+2024-12-21 08:47:07 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.LogUtil - TESTCASE: RESET PASSWORD
+2024-12-21 08:47:07 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-21 08:47:07 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: 
+2024-12-21 08:47:07 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: 
+2024-12-21 08:47:07 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LoginDataUtil - Loading test data from JSON file: D:\WorkSpace_Selenium\orangeHRM.TestNG40\src\test\resources\loginData.json
+2024-12-21 08:47:07 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Filtered Invalid Credentials test data: [{username=Adm, password=admin123, story=Invalid Credentials}, {username=Admin, password=admin, story=Invalid Credentials}, {username=Adm, password=admin, story=Invalid Credentials}]
+2024-12-21 08:47:07 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithInvalidCredentials at 2024-12-21T08:47:07.625764900
+2024-12-21 08:47:07 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with invalid credentials
+2024-12-21 08:47:07 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithInvalidCredentials
+2024-12-21 08:47:07 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Starting test: testLoginWithInvalidCredentials with username: Adm
+2024-12-21 08:47:07 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Parameters - Username: Adm, Password: admin123
+2024-12-21 08:47:07 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 08:47:07 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Username field validation passed.
+2024-12-21 08:47:07 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Adm
+2024-12-21 08:47:07 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Password field validation passed.
+2024-12-21 08:47:07 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.tests.TC_Login_EmptyCredentials - Login validation for empty credentials passed.
+2024-12-21 08:47:07 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithEmptyCredentials. Duration: 96 ms
+2024-12-21 08:47:07 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin123
+2024-12-21 08:47:07 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LoginDataUtil - Loading test data from Excel file: D:\WorkSpace_Selenium\orangeHRM.TestNG40\src\test\resources\loginData.xlsx
+2024-12-21 08:47:07 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-21 08:47:08 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Filtered Valid Credentials test data: [{password=admin123, username=Admin, story=Valid Credentials}]
+2024-12-21 08:47:08 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithValidCredentials at 2024-12-21T08:47:08.308765900
+2024-12-21 08:47:08 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with valid credentials
+2024-12-21 08:47:08 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithValidCredentials
+2024-12-21 08:47:08 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.tests.TC_Login_ValidCredentials - Starting test: testLoginWithValidCredentials with username: Admin
+2024-12-21 08:47:08 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Parameters - Username: Admin, Password: admin123
+2024-12-21 08:47:08 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-21 08:47:08 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.LogUtil - Clicked forgot password link
+2024-12-21 08:47:08 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin123
+2024-12-21 08:47:08 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 08:47:08 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-21 08:47:08 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 08:47:08 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 08:47:09 [TestNG-test=SanityTests-2] ERROR com.orangehrm.testng.basetest.BaseTest - Login failed with error message: Invalid credentials
+2024-12-21 08:47:09 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Login validation for invalid credentials passed.
+2024-12-21 08:47:09 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithInvalidCredentials. Duration: 917 ms
+2024-12-21 08:47:09 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithInvalidCredentials at 2024-12-21T08:47:09.229547400
+2024-12-21 08:47:09 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with invalid credentials
+2024-12-21 08:47:09 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithInvalidCredentials
+2024-12-21 08:47:09 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Starting test: testLoginWithInvalidCredentials with username: Admin
+2024-12-21 08:47:09 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Parameters - Username: Admin, Password: admin
+2024-12-21 08:47:09 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-21 08:47:09 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin
+2024-12-21 08:47:09 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 08:47:10 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Login successful with valid credentials.
+2024-12-21 08:47:10 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.tests.TC_Login_ResetPassword - Reset password validation successful.
+2024-12-21 08:47:10 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testResetPassword. Duration: 900 ms
+2024-12-21 08:47:10 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-21 08:47:10 [TestNG-test=SanityTests-2] ERROR com.orangehrm.testng.basetest.BaseTest - Login failed with error message: Invalid credentials
+2024-12-21 08:47:10 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Login validation for invalid credentials passed.
+2024-12-21 08:47:10 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithInvalidCredentials. Duration: 1698 ms
+2024-12-21 08:47:10 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithInvalidCredentials at 2024-12-21T08:47:10.931982500
+2024-12-21 08:47:10 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with invalid credentials
+2024-12-21 08:47:10 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithInvalidCredentials
+2024-12-21 08:47:10 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Starting test: testLoginWithInvalidCredentials with username: Adm
+2024-12-21 08:47:10 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Parameters - Username: Adm, Password: admin
+2024-12-21 08:47:10 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Adm
+2024-12-21 08:47:11 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin
+2024-12-21 08:47:11 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Clicked logout link
+2024-12-21 08:47:11 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.tests.TC_Login_ValidCredentials - Logged out successfully. Test completed.
+2024-12-21 08:47:11 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithValidCredentials. Duration: 730 ms
+2024-12-21 08:47:11 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-21 08:47:11 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 08:47:12 [TestNG-test=SanityTests-2] ERROR com.orangehrm.testng.basetest.BaseTest - Login failed with error message: Invalid credentials
+2024-12-21 08:47:12 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Login validation for invalid credentials passed.
+2024-12-21 08:47:12 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithInvalidCredentials. Duration: 1343 ms
+2024-12-21 08:47:12 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-21 08:47:12 [main] INFO  com.orangehrm.testng.listeners.TestListener - Test Context Finished: SanityTests
+2024-12-21 08:47:12 [main] INFO  com.orangehrm.testng.listeners.TestListener - Test Run Summary - Total: 4, Passed: 6, Failed: 0, Skipped: 0
+2024-12-21 08:47:12 [main] INFO  com.orangehrm.testng.listeners.TestListener - Success Percentage: {:.2f}%
+2024-12-21 08:47:12 [main] INFO  com.orangehrm.testng.listeners.TestListener - Test Run Duration: 10 seconds
+2024-12-21 14:33:54 [main] INFO  com.orangehrm.testng.listeners.TestListener - TestListener Initialized.
+2024-12-21 14:33:54 [main] INFO  com.orangehrm.testng.utils.ConfigManager - Loaded configuration for environment: dev
+2024-12-21 14:33:54 [main] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 14:33:54 [main] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 14:33:54 [main] INFO  com.orangehrm.testng.listeners.TestListener - Test Context Started: SanityTests
+2024-12-21 14:33:54 [main] INFO  com.orangehrm.testng.listeners.TestListener - Running tests with Browser: ${browser:chrome}
+2024-12-21 14:33:54 [main] INFO  com.orangehrm.testng.listeners.TestListener - Running tests in Environment: ${env:dev}
+2024-12-21 14:33:54 [main] WARN  com.orangehrm.testng.listeners.TestListener - Invalid or missing log level '${logLevel:DEBUG}'. Defaulting to 'INFO'.
+2024-12-21 14:33:54 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-21 14:33:54 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-21 14:33:54 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-21 14:33:54 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-21 14:33:57 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 14:33:57 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 14:33:57 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 14:33:57 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG40\allure-results
+2024-12-21 14:33:57 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 14:33:57 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 14:33:57 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 14:33:57 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Allure results cleared successfully.
+2024-12-21 14:33:59 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-21 14:33:59 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-21 14:34:00 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-21 14:34:00 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LoginDataUtil - Loading test data from JSON file: D:\WorkSpace_Selenium\orangeHRM.TestNG40\src\test\resources\loginData.json
+2024-12-21 14:34:00 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Filtered Invalid Credentials test data: [{username=Adm, password=admin123, story=Invalid Credentials}, {username=Admin, password=admin, story=Invalid Credentials}, {username=Adm, password=admin, story=Invalid Credentials}]
+2024-12-21 14:34:00 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-21 14:34:00 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithInvalidCredentials at 2024-12-21T14:34:00.122646800
+2024-12-21 14:34:00 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with invalid credentials
+2024-12-21 14:34:00 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithInvalidCredentials
+2024-12-21 14:34:00 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Starting test: testLoginWithInvalidCredentials with username: Adm
+2024-12-21 14:34:00 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Parameters - Username: Adm, Password: admin123
+2024-12-21 14:34:00 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Adm
+2024-12-21 14:34:00 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithEmptyCredentials at 2024-12-21T14:34:00.200647500
+2024-12-21 14:34:00 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with empty credentials to validate required field errors
+2024-12-21 14:34:00 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithEmptyCredentials
+2024-12-21 14:34:00 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.tests.TC_Login_EmptyCredentials - Starting test: testLoginWithEmptyCredentials
+2024-12-21 14:34:00 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.LogUtil - TESTCASE: EMPTY CREDENTIALS
+2024-12-21 14:34:00 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin123
+2024-12-21 14:34:00 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: 
+2024-12-21 14:34:00 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: 
+2024-12-21 14:34:00 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 14:34:00 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LoginDataUtil - Loading test data from Excel file: D:\WorkSpace_Selenium\orangeHRM.TestNG40\src\test\resources\loginData.xlsx
+2024-12-21 14:34:00 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Username field validation passed.
+2024-12-21 14:34:00 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Password field validation passed.
+2024-12-21 14:34:00 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.tests.TC_Login_EmptyCredentials - Login validation for empty credentials passed.
+2024-12-21 14:34:00 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithEmptyCredentials. Duration: 303 ms
+2024-12-21 14:34:00 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testResetPassword at 2024-12-21T14:34:00.549647100
+2024-12-21 14:34:00 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the reset password functionality of OrangeHRM
+2024-12-21 14:34:00 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testResetPassword
+2024-12-21 14:34:00 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.tests.TC_Login_ResetPassword - Starting test: testResetPassword
+2024-12-21 14:34:00 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.LogUtil - TESTCASE: RESET PASSWORD
+2024-12-21 14:34:00 [TestNG-test=SanityTests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-21 14:34:00 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Filtered Valid Credentials test data: [{password=admin123, username=Admin, story=Valid Credentials}]
+2024-12-21 14:34:00 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithValidCredentials at 2024-12-21T14:34:00.987649200
+2024-12-21 14:34:00 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with valid credentials
+2024-12-21 14:34:00 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithValidCredentials
+2024-12-21 14:34:00 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.tests.TC_Login_ValidCredentials - Starting test: testLoginWithValidCredentials with username: Admin
+2024-12-21 14:34:00 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Parameters - Username: Admin, Password: admin123
+2024-12-21 14:34:01 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-21 14:34:01 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin123
+2024-12-21 14:34:01 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 14:34:01 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.LogUtil - Clicked forgot password link
+2024-12-21 14:34:01 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 14:34:01 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-21 14:34:01 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 14:34:01 [TestNG-test=SanityTests-2] ERROR com.orangehrm.testng.basetest.BaseTest - Login failed with error message: Invalid credentials
+2024-12-21 14:34:01 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Login validation for invalid credentials passed.
+2024-12-21 14:34:01 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithInvalidCredentials. Duration: 793 ms
+2024-12-21 14:34:01 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithInvalidCredentials at 2024-12-21T14:34:01.783626300
+2024-12-21 14:34:01 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with invalid credentials
+2024-12-21 14:34:01 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithInvalidCredentials
+2024-12-21 14:34:01 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Starting test: testLoginWithInvalidCredentials with username: Admin
+2024-12-21 14:34:01 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Parameters - Username: Admin, Password: admin
+2024-12-21 14:34:01 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-21 14:34:01 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin
+2024-12-21 14:34:01 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 14:34:02 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Login successful with valid credentials.
+2024-12-21 14:34:03 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.tests.TC_Login_ResetPassword - Reset password validation successful.
+2024-12-21 14:34:03 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testResetPassword. Duration: 1231 ms
+2024-12-21 14:34:03 [TestNG-test=SanityTests-4] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-21 14:34:03 [TestNG-test=SanityTests-2] ERROR com.orangehrm.testng.basetest.BaseTest - Login failed with error message: Invalid credentials
+2024-12-21 14:34:03 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Login validation for invalid credentials passed.
+2024-12-21 14:34:03 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithInvalidCredentials. Duration: 1662 ms
+2024-12-21 14:34:03 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLoginWithInvalidCredentials at 2024-12-21T14:34:03.451412400
+2024-12-21 14:34:03 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Description: Verify the login functionality of OrangeHRM with invalid credentials
+2024-12-21 14:34:03 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - WebDriver initialized for test: testLoginWithInvalidCredentials
+2024-12-21 14:34:03 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Starting test: testLoginWithInvalidCredentials with username: Adm
+2024-12-21 14:34:03 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Parameters - Username: Adm, Password: admin
+2024-12-21 14:34:03 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Adm
+2024-12-21 14:34:03 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin
+2024-12-21 14:34:04 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.utils.LogUtil - Clicked logout link
+2024-12-21 14:34:04 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.tests.TC_Login_ValidCredentials - Logged out successfully. Test completed.
+2024-12-21 14:34:04 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithValidCredentials. Duration: 840 ms
+2024-12-21 14:34:04 [TestNG-test=SanityTests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-21 14:34:04 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-21 14:34:04 [TestNG-test=SanityTests-2] ERROR com.orangehrm.testng.basetest.BaseTest - Login failed with error message: Invalid credentials
+2024-12-21 14:34:04 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.tests.TC_Login_InvalidCredentials - Login validation for invalid credentials passed.
+2024-12-21 14:34:04 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLoginWithInvalidCredentials. Duration: 1355 ms
+2024-12-21 14:34:04 [TestNG-test=SanityTests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-21 14:34:04 [main] INFO  com.orangehrm.testng.listeners.TestListener - Test Context Finished: SanityTests
+2024-12-21 14:34:04 [main] INFO  com.orangehrm.testng.listeners.TestListener - Test Run Summary - Total: 4, Passed: 6, Failed: 0, Skipped: 0
+2024-12-21 14:34:04 [main] INFO  com.orangehrm.testng.listeners.TestListener - Success Percentage: {:.2f}%
+2024-12-21 14:34:04 [main] INFO  com.orangehrm.testng.listeners.TestListener - Test Run Duration: 10 seconds

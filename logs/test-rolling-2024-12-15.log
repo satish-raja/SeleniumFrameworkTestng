@@ -1,0 +1,142 @@
+2024-12-15 11:39:35 [TestNG-tests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Context Started: FirefoxTests
+2024-12-15 11:39:35 [TestNG-tests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Context Started: ChromeTests
+2024-12-15 11:39:35 [TestNG-tests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Context Started: EdgeTests
+2024-12-15 11:39:35 [TestNG-tests-1] INFO  com.orangehrm.testng.listeners.TestListener - Running tests with Browser: chrome and Environment: dev
+2024-12-15 11:39:35 [TestNG-tests-2] INFO  com.orangehrm.testng.listeners.TestListener - Running tests with Browser: firefox and Environment: qa
+2024-12-15 11:39:35 [TestNG-tests-3] INFO  com.orangehrm.testng.listeners.TestListener - Running tests with Browser: edge and Environment: prod
+2024-12-15 11:39:35 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.ConfigManager - Loaded configuration file: src\test\resources\config-dev.properties
+2024-12-15 11:39:35 [TestNG-tests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: firefox and Environment: qa
+2024-12-15 11:39:35 [TestNG-tests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: edge and Environment: prod
+2024-12-15 11:39:35 [TestNG-tests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Starting Test Setup for Browser: chrome and Environment: dev
+2024-12-15 11:39:37 [TestNG-tests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG17\allure-results
+2024-12-15 11:39:37 [TestNG-tests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG17\allure-results
+2024-12-15 11:39:39 [TestNG-tests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Clearing Allure results at: D:\WorkSpace_Selenium\orangeHRM.TestNG17\allure-results
+2024-12-15 11:39:39 [TestNG-tests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-15 11:39:40 [TestNG-tests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-15 11:39:40 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.TestDataManager - Processing file: loginData.json
+2024-12-15 11:39:40 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.TestDataManager - File type detected: JSON
+2024-12-15 11:39:40 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Loaded test data from JSON file: [{username=Admin, password=admin123, story=ValidCredentials}, {username=Adm, password=admin123, story=Invalid Username}, {username=Admin, password=admin, story=Invalid Password}, {username=Adm, password=admin, story=Invalid Username and Password}]
+2024-12-15 11:39:40 [TestNG-tests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLogin
+2024-12-15 11:39:40 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Attempting to log in with username: Admin and password: admin123
+2024-12-15 11:39:40 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-15 11:39:40 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin123
+2024-12-15 11:39:40 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.TestDataManager - Processing file: loginData.json
+2024-12-15 11:39:40 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.TestDataManager - File type detected: JSON
+2024-12-15 11:39:40 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Loaded test data from JSON file: [{username=Admin, password=admin123, story=ValidCredentials}, {username=Adm, password=admin123, story=Invalid Username}, {username=Admin, password=admin, story=Invalid Password}, {username=Adm, password=admin, story=Invalid Username and Password}]
+2024-12-15 11:39:40 [TestNG-tests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLogin
+2024-12-15 11:39:40 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Attempting to log in with username: Admin and password: admin123
+2024-12-15 11:39:40 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-15 11:39:40 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin123
+2024-12-15 11:39:41 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-15 11:39:42 [TestNG-tests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Navigating to Login URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-15 11:39:42 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Login successful with valid credentials.
+2024-12-15 11:39:42 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-15 11:39:42 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.TestDataManager - Processing file: loginData.json
+2024-12-15 11:39:42 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.TestDataManager - File type detected: JSON
+2024-12-15 11:39:42 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Loaded test data from JSON file: [{username=Admin, password=admin123, story=ValidCredentials}, {username=Adm, password=admin123, story=Invalid Username}, {username=Admin, password=admin, story=Invalid Password}, {username=Adm, password=admin, story=Invalid Username and Password}]
+2024-12-15 11:39:42 [TestNG-tests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLogin
+2024-12-15 11:39:42 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Attempting to log in with username: Admin and password: admin123
+2024-12-15 11:39:42 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-15 11:39:42 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin123
+2024-12-15 11:39:42 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Login successful with valid credentials.
+2024-12-15 11:39:43 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-15 11:39:44 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Clicked logout link
+2024-12-15 11:39:44 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Logged out successfully.
+2024-12-15 11:39:44 [TestNG-tests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLogin
+2024-12-15 11:39:44 [TestNG-tests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLogin
+2024-12-15 11:39:44 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Attempting to log in with username: Adm and password: admin123
+2024-12-15 11:39:44 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Login successful with valid credentials.
+2024-12-15 11:39:44 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Adm
+2024-12-15 11:39:44 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin123
+2024-12-15 11:39:44 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-15 11:39:44 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Clicked logout link
+2024-12-15 11:39:44 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Logged out successfully.
+2024-12-15 11:39:44 [TestNG-tests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLogin
+2024-12-15 11:39:44 [TestNG-tests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLogin
+2024-12-15 11:39:44 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Attempting to log in with username: Adm and password: admin123
+2024-12-15 11:39:45 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Adm
+2024-12-15 11:39:45 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin123
+2024-12-15 11:39:45 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Login validation for invalid credentials (Invalid Username): Invalid credentials
+2024-12-15 11:39:45 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked logout link
+2024-12-15 11:39:45 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Logged out successfully.
+2024-12-15 11:39:45 [TestNG-tests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLogin
+2024-12-15 11:39:45 [TestNG-tests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLogin
+2024-12-15 11:39:45 [TestNG-tests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLogin
+2024-12-15 11:39:45 [TestNG-tests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLogin
+2024-12-15 11:39:45 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Attempting to log in with username: Adm and password: admin123
+2024-12-15 11:39:45 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Attempting to log in with username: Admin and password: admin
+2024-12-15 11:39:46 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-15 11:39:46 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin
+2024-12-15 11:39:46 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-15 11:39:46 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-15 11:39:46 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Adm
+2024-12-15 11:39:46 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin123
+2024-12-15 11:39:46 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Login validation for invalid credentials (Invalid Username): Invalid credentials
+2024-12-15 11:39:46 [TestNG-tests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLogin
+2024-12-15 11:39:46 [TestNG-tests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLogin
+2024-12-15 11:39:46 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Attempting to log in with username: Admin and password: admin
+2024-12-15 11:39:46 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-15 11:39:46 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin
+2024-12-15 11:39:46 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-15 11:39:47 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Login validation for invalid credentials (Invalid Password): Invalid credentials
+2024-12-15 11:39:47 [TestNG-tests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLogin
+2024-12-15 11:39:47 [TestNG-tests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLogin
+2024-12-15 11:39:47 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Attempting to log in with username: Adm and password: admin
+2024-12-15 11:39:47 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Adm
+2024-12-15 11:39:47 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin
+2024-12-15 11:39:47 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-15 11:39:48 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Login validation for invalid credentials (Invalid Username): Invalid credentials
+2024-12-15 11:39:48 [TestNG-tests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLogin
+2024-12-15 11:39:48 [TestNG-tests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLogin
+2024-12-15 11:39:48 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Attempting to log in with username: Admin and password: admin
+2024-12-15 11:39:48 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-15 11:39:48 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin
+2024-12-15 11:39:48 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Login validation for invalid credentials (Invalid Password): Invalid credentials
+2024-12-15 11:39:48 [TestNG-tests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLogin
+2024-12-15 11:39:48 [TestNG-tests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLogin
+2024-12-15 11:39:48 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Attempting to log in with username: Adm and password: admin
+2024-12-15 11:39:48 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Adm
+2024-12-15 11:39:48 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin
+2024-12-15 11:39:48 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-15 11:39:48 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Login validation for invalid credentials (Invalid Username and Password): Invalid credentials
+2024-12-15 11:39:48 [TestNG-tests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLogin
+2024-12-15 11:39:48 [TestNG-tests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testResetPassword
+2024-12-15 11:39:48 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Validating Reset Password Link
+2024-12-15 11:39:49 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-15 11:39:49 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Clicked forgot password link
+2024-12-15 11:39:49 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Login validation for invalid credentials (Invalid Username and Password): Invalid credentials
+2024-12-15 11:39:49 [TestNG-tests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLogin
+2024-12-15 11:39:49 [TestNG-tests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testResetPassword
+2024-12-15 11:39:49 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Validating Reset Password Link
+2024-12-15 11:39:49 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-15 11:39:49 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-15 11:39:50 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Clicked forgot password link
+2024-12-15 11:39:50 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Login validation for invalid credentials (Invalid Password): Invalid credentials
+2024-12-15 11:39:50 [TestNG-tests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLogin
+2024-12-15 11:39:50 [TestNG-tests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testLogin
+2024-12-15 11:39:50 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Attempting to log in with username: Adm and password: admin
+2024-12-15 11:39:50 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Adm
+2024-12-15 11:39:50 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered password: admin
+2024-12-15 11:39:50 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-15 11:39:50 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-15 11:39:51 [TestNG-tests-1] INFO  com.orangehrm.testng.utils.LogUtil - Reset password validation successful.
+2024-12-15 11:39:51 [TestNG-tests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testResetPassword
+2024-12-15 11:39:51 [TestNG-tests-1] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-15 11:39:51 [TestNG-tests-1] INFO  com.orangehrm.testng.listeners.TestListener - Test Context Finished: ChromeTests
+2024-12-15 11:39:51 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-15 11:39:51 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-15 11:39:51 [TestNG-tests-3] INFO  com.orangehrm.testng.utils.LogUtil - Reset password validation successful.
+2024-12-15 11:39:51 [TestNG-tests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testResetPassword
+2024-12-15 11:39:51 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Login validation for invalid credentials (Invalid Username and Password): Invalid credentials
+2024-12-15 11:39:51 [TestNG-tests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testLogin
+2024-12-15 11:39:51 [TestNG-tests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Started: testResetPassword
+2024-12-15 11:39:51 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Validating Reset Password Link
+2024-12-15 11:39:52 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked forgot password link
+2024-12-15 11:39:53 [TestNG-tests-3] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-15 11:39:53 [TestNG-tests-3] INFO  com.orangehrm.testng.listeners.TestListener - Test Context Finished: EdgeTests
+2024-12-15 11:39:53 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Entered username: Admin
+2024-12-15 11:39:54 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Clicked login button
+2024-12-15 11:39:54 [TestNG-tests-2] INFO  com.orangehrm.testng.utils.LogUtil - Reset password validation successful.
+2024-12-15 11:39:54 [TestNG-tests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Passed: testResetPassword
+2024-12-15 11:39:55 [TestNG-tests-2] INFO  com.orangehrm.testng.basetest.BaseTest - Browser closed and WebDriver instance cleaned.
+2024-12-15 11:39:55 [TestNG-tests-2] INFO  com.orangehrm.testng.listeners.TestListener - Test Context Finished: FirefoxTests

@@ -1,0 +1,22 @@
+[
+  {
+    "username": "Admin",
+    "password": "admin123",
+    "story": "Valid Credentials"
+  },
+  {
+    "username": "Adm",
+    "password": "admin123",
+    "story": "Invalid Credentials"
+  },
+  {
+    "username": "Admin",
+    "password": "admin",
+    "story": "Invalid Credentials"
+  },
+  {
+    "username": "Adm",
+    "password": "admin",
+    "story": "Invalid Credentials"
+  }
+]

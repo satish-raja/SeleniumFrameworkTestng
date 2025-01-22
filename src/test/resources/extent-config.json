@@ -1,0 +1,13 @@
+{
+  "theme": "DARK",
+  "encoding": "utf-8",
+  "protocol": "HTTPS",
+  "offlineMode": true,
+  "timelineEnabled": false,
+  "thumbnailForBase64": true,
+  "documentTitle": "Automation Status Report",
+  "reportName": "Automation Test Results",
+  "timeStampFormat": "MMM dd, yyyy HH:mm:ss a",
+    "js": "",
+  "css": ""
+  }

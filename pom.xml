@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.orangehrm.selenium</groupId>
+	<artifactId>orangehrm-test</artifactId>
+	<version>1.0-SNAPSHOT</version>
+
+	<properties>
+		<!-- Centralized version management -->
+		<selenium.version>4.27.0</selenium.version>
+		<testng.version>7.10.2</testng.version>
+		<log4j.version>2.24.3</log4j.version>
+		<allure.version>2.29.1</allure.version>
+		<webdrivermanager.version>5.9.2</webdrivermanager.version>
+		<allure.maven.version>2.10.0</allure.maven.version>
+		<slf4j.version>2.0.16</slf4j.version>
+		<extent.report.version>5.1.2</extent.report.version>
+
+		<!-- Java and encoding settings -->
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<!-- Selenium -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+
+		<!-- TestNG -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Log4j for logging -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+
+		<!-- Allure Report -->
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
+			<version>${allure.version}</version>
+		</dependency>
+
+		<!-- ExtentReports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>${extent.report.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>tech.grasshopper</groupId>
+			<artifactId>extent-pdf-report</artifactId>
+			<version>2.12.0</version>
+		</dependency>
+
+		<!-- WebDriverManager (optional, for easier browser setup) -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>${webdrivermanager.version}</version>
+		</dependency>
+
+		<!-- SLF4J with Log4j2 binding -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+
+		<!-- Apache POI for Excel -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.3.0</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- Maven Surefire Plugin for TestNG -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.5.2</version>
+				<configuration>
+					<suiteXmlFiles>
+						<!-- Use property to define which suite XML file to use -->
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+
+			<!-- Allure Report Maven Plugin -->
+			<plugin>
+				<groupId>io.qameta.allure</groupId>
+				<artifactId>allure-maven</artifactId>
+				<version>${allure.maven.version}</version>
+				<configuration>
+					<reportVersion>${allure.maven.version}</reportVersion>
+					<resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+	<profiles>
+		<!-- Profile for cross browser execution (uses testng-parallel.xml) -->
+		<profile>
+			<id>crossbrowser</id>
+			<properties>
+				<suiteXmlFile>TestngRunner/testng-crossbrowsertest.xml</suiteXmlFile>
+			</properties>
+		</profile>
+
+		<!-- Profile for smoke test execution (uses testng-smoketest.xml) -->
+		<profile>
+			<id>smoketest</id>
+			<properties>
+				<suiteXmlFile>TestngRunner/testng-smoketest.xml</suiteXmlFile>
+			</properties>
+		</profile>
+
+		<!-- Profile for smoke test execution (uses testng-sanitytest.xml) -->
+		<profile>
+			<id>sanitytest</id>
+			<properties>
+				<suiteXmlFile>TestngRunner/testng-sanitytest.xml</suiteXmlFile>
+			</properties>
+		</profile>
+
+		<!-- Profile for smoke test execution (uses testng-regressiontest.xml) -->
+		<profile>
+			<id>regressiontest</id>
+			<properties>
+				<suiteXmlFile>TestngRunner/testng-regressiontest.xml</suiteXmlFile>
+			</properties>
+		</profile>
+
+		<!-- Profile for smoke test execution (uses testng-endtoendtest.xml) -->
+		<profile>
+			<id>endtoendtest</id>
+			<properties>
+				<suiteXmlFile>TestngRunner/testng-endtoendtest.xml</suiteXmlFile>
+			</properties>
+		</profile>
+		
+	</profiles>
+</project>
