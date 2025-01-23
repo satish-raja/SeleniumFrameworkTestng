@@ -17,7 +17,7 @@ import io.qameta.allure.Story;
 @Test
 public class TC_Login_EmptyCredentials extends BaseTest {
 
-    private static final String REQUIRED_FIELD_ERROR = "Require";
+    private static final String REQUIRED_FIELD_ERROR = "Required";
     private TestLogger testLogger = new TestLogger(); // Initialize TestLogger
 
     @Test(description = "Verify the login functionality of OrangeHRM with empty credentials to validate required field errors", 
