@@ -3,8 +3,8 @@ pipeline {
 
     parameters {
         string(name: 'browser', defaultValue: 'chrome', description: 'Browser to run tests')
-        string(name: 'env', defaultValue: 'qa', description: 'Test Environment')
-        string(name: 'logLevel', defaultValue: 'INFO', description: 'Log Level')
+        string(name: 'env', defaultValue: 'prod', description: 'Test Environment')
+        string(name: 'logLevel', defaultValue: 'ERROR', description: 'Log Level')
     }
 
     stages {
