@@ -1,29 +1,3 @@
-/**
- * Class Name: DriverManager
- *
- * Description:
- * This class manages the lifecycle of WebDriver instances, ensuring that a WebDriver instance is tied to the current thread.
- * It provides methods to initialize a WebDriver for different browsers, retrieve the current WebDriver, and quit the WebDriver instance.
- * Additionally, it handles logging for each WebDriver-related operation using BrowserFactory.
- *
- * Key Features:
- * - Initializes WebDriver for different browsers using BrowserFactory.
- * - Manages WebDriver instances with ThreadLocal to ensure thread-safety.
- * - Provides methods to set, get, and quit WebDriver instances.
- * - Supports logging for each operation related to WebDriver management.
- *
- * Dependencies:
- * - Selenium WebDriver for browser automation.
- * - SLF4J (Log4j) for logging.
- * - BrowserFactory for WebDriver initialization based on browser type.
- *
- * Usage:
- * - Call `initializeDriver(String browser, boolean isHeadless)` to set up a WebDriver instance.
- * - Use `getDriver()` to retrieve the WebDriver instance for the current thread.
- * - Call `quitDriver()` to safely terminate and remove the WebDriver instance.
- */
-
-
 package com.orangehrm.testng.utils;
 
 import org.openqa.selenium.WebDriver;
@@ -90,7 +64,7 @@ public class DriverManager {
     }
 
     /**
-     * Initialize a WebDriver instance using BrowserFactory.
+     * Initialize a WebDriver instance using BrowserFactory or RemoteWebDriver based on configuration.
      *
      * @param browser The browser name (e.g., "chrome", "firefox").
      * @param isHeadless If true, the WebDriver will be initialized in headless mode.
@@ -99,12 +73,24 @@ public class DriverManager {
     public static void initializeDriver(String browser, boolean isHeadless) {
         try {
             logger.info("Initializing WebDriver for browser: {} with headless mode: {}", browser, isHeadless);
-            WebDriver driver = BrowserFactory.getDriver(browser, isHeadless);
-            setDriver(driver);
-            logger.info("WebDriver for {} initialized successfully.", browser);
+
+            if (ConfigManager.isRemoteWebDriver()) {
+                // Initialize Remote WebDriver
+                WebDriver driver = BrowserFactory.getRemoteDriver(browser, isHeadless);
+                setDriver(driver);
+                logger.info("Remote WebDriver for {} initialized successfully.", browser);
+            } else {
+                // Initialize Local WebDriver using BrowserFactory
+                WebDriver driver = BrowserFactory.getDriver(browser, isHeadless);
+                setDriver(driver);
+                logger.info("Local WebDriver for {} initialized successfully.", browser);
+            }
         } catch (IllegalArgumentException e) {
             logger.error("Failed to initialize WebDriver: {}", e.getMessage());
             throw e;
+        } catch (Exception e) {
+            logger.error("Error during WebDriver initialization: {}", e.getMessage());
+            throw new RuntimeException("Error during WebDriver initialization.", e);
         }
     }
 

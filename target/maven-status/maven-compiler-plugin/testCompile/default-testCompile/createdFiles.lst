@@ -3,6 +3,7 @@ com\orangehrm\testng\reports\AllureReportManager.class
 com\orangehrm\testng\tests\TC_Login_ResetPassword.class
 com\orangehrm\testng\basetest\BaseTest.class
 com\orangehrm\testng\tests\TC_Login_EmptyCredentials.class
+com\orangehrm\testng\utils\TestSetupManager.class
 com\orangehrm\testng\listeners\ExtentTestListener.class
 com\orangehrm\testng\listeners\RetryAnalyzer.class
 com\orangehrm\testng\utils\TestDataProvider.class

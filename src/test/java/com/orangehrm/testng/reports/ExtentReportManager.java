@@ -67,6 +67,16 @@ public class ExtentReportManager {
         threadExtentTest.set(test); // Save the current test in the thread-local variable
         return test;
     }
+    
+	// Set the current test in the thread-local variable
+	public static synchronized void setTest(ExtentTest test) {
+		if (test != null) {
+			threadExtentTest.set(test);
+			logger.info("ExtentTest set for thread: {}", Thread.currentThread().getId());
+		} else {
+			logger.error("Attempted to set a null ExtentTest.");
+		}
+	}
 
     // Get the current test
     public static synchronized ExtentTest getTest() {

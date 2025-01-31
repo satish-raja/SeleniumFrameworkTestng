@@ -1,1 +1,0 @@
-{"uuid":"bc309ad8-305d-4071-9544-b270a0245c6b","name":"SanityTestSuite","children":["5f8b2bfe-36d4-49d6-9903-44c8ca7149b4"],"befores":[{"name":"clearAllureResults","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1735867124308,"stop":1735867124327}],"afters":[],"start":1735867124296,"stop":1735867136327}

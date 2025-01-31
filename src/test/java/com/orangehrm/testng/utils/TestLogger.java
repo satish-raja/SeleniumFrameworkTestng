@@ -34,11 +34,21 @@ public class TestLogger {
     public void logError(String message) {
         LogUtil.log(message, LogUtil.LogLevel.ERROR);
     }
+    
+    public void logError(String message, Object... params) {
+        LogUtil.log(String.format(message, params), LogUtil.LogLevel.ERROR);
+    }
+
 
     // New logInfo method
     public void logInfo(String message) {
         LogUtil.log(message, LogUtil.LogLevel.INFO);
     }
+    
+    public void logInfo(String message, Object... params) {
+        LogUtil.log(String.format(message, params), LogUtil.LogLevel.INFO);
+    }
+
 
     // New logWarning method
     public void logWarning(String message) {

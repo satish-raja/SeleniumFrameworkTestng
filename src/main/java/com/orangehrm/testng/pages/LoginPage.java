@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 
 import com.orangehrm.testng.managers.WaitManager;
 import com.orangehrm.testng.page.locators.LoginPageLocators;
-import com.orangehrm.testng.utils.LogUtil;
-import com.orangehrm.testng.utils.ElementVisibilityWait;
 import com.orangehrm.testng.utils.ElementTextWait;
+import com.orangehrm.testng.utils.ElementVisibilityWait;
+import com.orangehrm.testng.utils.LogUtil;
 
 /**
  * LoginPage class represents the login page and contains all the interactions
@@ -38,7 +38,7 @@ public class LoginPage {
         this.visibilityWait = new ElementVisibilityWait(waitManager.getWait());
         this.textWait = new ElementTextWait(driver, timeoutInSeconds, 500);  // timeout = 10s, polling = 500ms
     }
-
+    
     /**
      * Enters the username into the username input field.
      * Logs the action for tracking purposes.
