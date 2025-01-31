@@ -131,17 +131,28 @@ public class ExtentTestListener implements ITestListener {
         }
     }
 
+//    @Override
+//    public void onStart(ITestContext context) {
+//        testLogger.logTestContextStart(context);  // Log test context start
+//        ExtentTest test = ExtentReportManager.getTest();
+//        
+//        if (test != null) {
+//            ExtentReportManager.addContextInfo(context);  // Add context info to Extent report
+//            testLogger.logInfo("Test context started: " + context.getName());
+//        } else {
+//            testLogger.logError("Test object is null during context start for: " + context.getName());
+//        }
+//    }
+    
     @Override
     public void onStart(ITestContext context) {
         testLogger.logTestContextStart(context);  // Log test context start
-        ExtentTest test = ExtentReportManager.getTest();
-        
-        if (test != null) {
-            ExtentReportManager.addContextInfo(context);  // Add context info to Extent report
-            testLogger.logInfo("Test context started: " + context.getName());
-        } else {
-            testLogger.logError("Test object is null during context start for: " + context.getName());
-        }
+
+        // Create a parent test for the context (e.g., suite or test group)
+        ExtentTest parentTest = ExtentReportManager.createTest(context.getName(), "Test Context: " + context.getName());
+        ExtentReportManager.setTest(parentTest); // Set this parent test in thread-local variable
+
+        testLogger.logInfo("Test context started: " + context.getName());
     }
 
     @Override

@@ -20,7 +20,6 @@ com\orangehrm\testng\utils\LogUtil.class
 com\orangehrm\testng\utils\ExcelDataProcessor.class
 com\orangehrm\testng\utils\LogUtil$LogLevel.class
 com\orangehrm\testng\utils\LogUtil$1.class
-com\orangehrm\testng\managers\TestSetupManager.class
 com\orangehrm\testng\utils\PropertiesConfigurationProvider.class
 com\orangehrm\testng\managers\WaitManager.class
 com\orangehrm\testng\utils\ElementUtil.class

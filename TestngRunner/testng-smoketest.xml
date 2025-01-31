@@ -2,11 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="SmokeTestSuite">
     <!-- Global Parameters -->
-    <parameter name="isHeadless" value="false"/>
     <parameter name="browser" value="${browser:chrome}" />
     <parameter name="env" value="${env:dev}" />
     <parameter name="logLevel" value="${logLevel:DEBUG}" />
-    <parameter name="report.type" value="${reportType:allure}" />
     
     <!-- Listeners to handle report generation -->
     <listeners>

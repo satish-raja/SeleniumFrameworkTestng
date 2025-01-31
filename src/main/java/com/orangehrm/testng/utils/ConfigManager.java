@@ -1,25 +1,3 @@
-/**
- * Class Name: ConfigManager
- *
- * Description:
- * This class provides a centralized mechanism for managing application configuration settings.
- * It supports loading environment-specific configuration files and retrieving properties by key.
- * The implementation is flexible and extensible, allowing different configuration formats using the `ConfigurationProvider` interface.
- *
- * Key Features:
- * - Dynamically loads environment-specific configuration files.
- * - Retrieves property values with optional default fallbacks.
- * - Implements the `ConfigurationProvider` interface for extensibility.
- *
- * Dependencies:
- * - `PropertiesConfigurationProvider` for loading `.properties` files.
- * - Apache Log4j for logging configuration load operations.
- *
- * Usage:
- * - Use `ConfigManager.getProperty(String key)` to retrieve a property.
- * - Extend `ConfigurationProvider` for custom configuration formats (e.g., JSON, YAML).
- */
-
 package com.orangehrm.testng.utils;
 
 import java.io.IOException;
@@ -69,6 +47,24 @@ public class ConfigManager {
         String environment = System.getProperty("env", "dev").toLowerCase();
         logger.info("Resolved environment: {}", environment);
         return environment;
+    }
+
+    /**
+     * Checks if the WebDriver should be remote based on configuration.
+     *
+     * @return true if WebDriver should be remote, false otherwise.
+     */
+    public static boolean isRemoteWebDriver() {
+        return Boolean.parseBoolean(getProperty("webdriver.remote", "false"));
+    }
+
+    /**
+     * Retrieves the hub URL for remote WebDriver.
+     *
+     * @return The WebDriver hub URL.
+     */
+    public static String getWebDriverHubUrl() {
+        return getProperty("webdriver.hub.url", "http://localhost:4444/wd/hub");
     }
 }
 

@@ -2,16 +2,24 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-30T16:30:46 IST" name="RetryTestSuite" finished-at="2024-12-30T16:30:46 IST" duration-ms="150">
+  <suite started-at="2025-01-28T07:24:41 IST" name="SmokeTestSuite" finished-at="2025-01-28T07:24:41 IST" duration-ms="592">
     <groups>
+      <group name="regressionTest">
+        <method signature="TC_Login_ValidCredentials.testLoginWithValidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testng.tests.TC_Login_ValidCredentials@1f86099a]" name="testLoginWithValidCredentials" class="com.orangehrm.testng.tests.TC_Login_ValidCredentials"/>
+      </group> <!-- regressionTest -->
+      <group name="endtoendTest">
+        <method signature="TC_Login_ValidCredentials.testLoginWithValidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testng.tests.TC_Login_ValidCredentials@1f86099a]" name="testLoginWithValidCredentials" class="com.orangehrm.testng.tests.TC_Login_ValidCredentials"/>
+      </group> <!-- endtoendTest -->
+      <group name="smokeTest">
+        <method signature="TC_Login_ValidCredentials.testLoginWithValidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testng.tests.TC_Login_ValidCredentials@1f86099a]" name="testLoginWithValidCredentials" class="com.orangehrm.testng.tests.TC_Login_ValidCredentials"/>
+      </group> <!-- smokeTest -->
+      <group name="sanityTest">
+        <method signature="TC_Login_ValidCredentials.testLoginWithValidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testng.tests.TC_Login_ValidCredentials@1f86099a]" name="testLoginWithValidCredentials" class="com.orangehrm.testng.tests.TC_Login_ValidCredentials"/>
+      </group> <!-- sanityTest -->
     </groups>
-    <test started-at="2024-12-30T16:30:46 IST" name="SanityTests" finished-at="2024-12-30T16:30:46 IST" duration-ms="150">
-      <class name="com.orangehrm.testng.tests.TC_Login_EmptyCredentials">
-        <test-method is-config="true" signature="clearAllureResults()[pri:0, instance:com.orangehrm.testng.tests.TC_Login_EmptyCredentials@294bdeb4]" started-at="2024-12-30T16:30:46 IST" name="clearAllureResults" finished-at="2024-12-30T16:30:46 IST" duration-ms="28" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearAllureResults -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testng.tests.TC_Login_EmptyCredentials@294bdeb4]" started-at="2024-12-30T16:30:46 IST" name="setUp" finished-at="2024-12-30T16:30:46 IST" duration-ms="7" status="FAIL">
+    <test started-at="2025-01-28T07:24:41 IST" name="SmokeTests" finished-at="2025-01-28T07:24:41 IST" duration-ms="592">
+      <class name="com.orangehrm.testng.tests.TC_Login_ValidCredentials">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testng.tests.TC_Login_ValidCredentials@1f86099a]" started-at="2025-01-28T07:24:41 IST" name="setUp" finished-at="2025-01-28T07:24:41 IST" duration-ms="17" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -20,18 +28,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[false]]>
+                <![CDATA[${env:dev}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[${logLevel:DEBUG}]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
+          <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Unsupported browser: ${browser:chrome}]]>
+              <![CDATA[Error initializing remote WebDriver: Unsupported browser: ${browser:chrome}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Unsupported browser: ${browser:chrome}
-at com.orangehrm.testng.utils.BrowserFactory.getDriver(BrowserFactory.java:32)
-at com.orangehrm.testng.managers.TestSetupManager.initializeDriver(TestSetupManager.java:17)
+              <![CDATA[java.lang.RuntimeException: Error initializing remote WebDriver: Unsupported browser: ${browser:chrome}
+at com.orangehrm.testng.managers.TestSetupManager.initializeDriver(TestSetupManager.java:60)
 at com.orangehrm.testng.basetest.BaseTest.setUp(BaseTest.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -43,27 +55,53 @@ at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigIn
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginWithEmptyCredentials()[pri:0, instance:com.orangehrm.testng.tests.TC_Login_EmptyCredentials@294bdeb4]" started-at="2024-12-30T16:30:46 IST" name="testLoginWithEmptyCredentials" description="Verify the login functionality of OrangeHRM with empty credentials to validate required field errors" finished-at="2024-12-30T16:30:46 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.IllegalArgumentException">
+        <test-method signature="testLoginWithValidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testng.tests.TC_Login_ValidCredentials@1f86099a]" started-at="2025-01-28T07:24:41 IST" name="testLoginWithValidCredentials" description="Verify the login functionality of OrangeHRM with valid credentials" data-provider="loginDataValid" finished-at="2025-01-28T07:24:41 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid Credentials]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Unsupported browser: ${browser:chrome}]]>
+              <![CDATA[Error initializing remote WebDriver: Unsupported browser: ${browser:chrome}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Unsupported browser: ${browser:chrome}
-at com.orangehrm.testng.utils.BrowserFactory.getDriver(BrowserFactory.java:32)
-at com.orangehrm.testng.managers.TestSetupManager.initializeDriver(TestSetupManager.java:17)
+              <![CDATA[java.lang.RuntimeException: Error initializing remote WebDriver: Unsupported browser: ${browser:chrome}
+at com.orangehrm.testng.managers.TestSetupManager.initializeDriver(TestSetupManager.java:60)
 at com.orangehrm.testng.basetest.BaseTest.setUp(BaseTest.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -75,23 +113,33 @@ at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigIn
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginWithEmptyCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testng.tests.TC_Login_EmptyCredentials@294bdeb4]" started-at="2024-12-30T16:30:46 IST" name="tearDown" finished-at="2024-12-30T16:30:46 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- testLoginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testng.tests.TC_Login_ValidCredentials@1f86099a]" started-at="2025-01-28T07:24:41 IST" name="tearDown" finished-at="2025-01-28T07:24:41 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.orangehrm.testng.tests.TC_Login_EmptyCredentials -->
-    </test> <!-- SanityTests -->
-  </suite> <!-- RetryTestSuite -->
+      </class> <!-- com.orangehrm.testng.tests.TC_Login_ValidCredentials -->
+    </test> <!-- SmokeTests -->
+  </suite> <!-- SmokeTestSuite -->
 </testng-results>
