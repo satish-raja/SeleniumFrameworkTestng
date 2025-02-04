@@ -153,14 +153,6 @@
 			    <reportVersion>${allure.maven.version}</reportVersion>
 			    <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
 			  </configuration>
-			  <executions>
-			    <execution>
-			      <goals>
-			        <goal>serve</goal> <!-- To serve the Allure report on the local machine -->
-				<goal>report</goal> <!-- To generate the report -->      
-			      </goals>
-			    </execution>
-			  </executions>
 			</plugin>
 			
 		</plugins>
