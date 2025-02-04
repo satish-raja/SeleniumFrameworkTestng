@@ -146,15 +146,22 @@
 
 			<!-- Allure Report Maven Plugin -->
 			<plugin>
-				<groupId>io.qameta.allure</groupId>
-				<artifactId>allure-maven</artifactId>
-				<version>${allure.maven.version}</version>
-				<configuration>
-					<reportVersion>${allure.maven.version}</reportVersion>
-					<resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
-				</configuration>
+			  <groupId>io.qameta.allure</groupId>
+			  <artifactId>allure-maven</artifactId>
+			  <version>${allure.maven.version}</version>
+			  <configuration>
+			    <reportVersion>${allure.maven.version}</reportVersion>
+			    <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
+			  </configuration>
+			  <executions>
+			    <execution>
+			      <goals>
+			        <goal>serve</goal> <!-- To serve the Allure report on the local machine -->
+			      </goals>
+			    </execution>
+			  </executions>
 			</plugin>
-
+			
 		</plugins>
 	</build>
 
