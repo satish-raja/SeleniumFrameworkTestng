@@ -157,6 +157,7 @@
 			    <execution>
 			      <goals>
 			        <goal>serve</goal> <!-- To serve the Allure report on the local machine -->
+				<goal>generate</goal> <!-- To generate the report -->      
 			      </goals>
 			    </execution>
 			  </executions>
